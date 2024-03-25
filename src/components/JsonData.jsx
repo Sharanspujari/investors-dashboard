@@ -1,0 +1,38 @@
+export const investorsList = [
+  {
+    id: 0,
+    image: "../assets/image 1.png",
+    name: "Rajesh Sinha",
+    investments: "$12M",
+    deals: "03",
+    type: "Logn Term",
+    status: "active",
+  },
+  {
+    id: 1,
+    image: "../assets/image 1.png",
+    name: "Rajesh Sinha",
+    investments: "$12M",
+    deals: "03",
+    type: "Logn Term",
+    status: "active",
+  },
+  {
+    id: 2,
+    image: "../assets/image 1.png",
+    name: "Rajesh Sinha",
+    investments: "$12M",
+    deals: "03",
+    type: "Logn Term",
+    status: "Inactive",
+  },
+  {
+    id: 3,
+    image: "../assets/image 1.png",
+    name: "Rajesh Sinha",
+    investments: "$12M",
+    deals: "03",
+    type: "Logn Term",
+    status: "active",
+  },
+];

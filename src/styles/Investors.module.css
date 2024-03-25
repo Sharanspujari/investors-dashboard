@@ -1,0 +1,95 @@
+:root {
+  --buttonColor: linear-gradient(91.36deg, #28ccc2 0%, #2887cc 100%);
+  --textColor: #ffffff;
+}
+
+.addInvestor {
+  margin: 15px auto;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-radius: 24px;
+}
+
+.IconNameWrapper {
+  width: 166px;
+  height: 30px;
+  margin-left: 8px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.btnWrapper {
+  margin-right: 8px;
+}
+
+.addInvestorBtn {
+  background-image: var(--buttonColor);
+  color: var(--textColor);
+  width: 148px;
+  height: 40px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+/* width: 1096px;
+height: 56px;
+top: 210px;
+left: 312px;
+gap: 0px;
+border-radius: 16px 0px 0px 0px;
+opacity: 0px; */
+
+.searchAndFilterWrapper {
+  margin: 15px auto;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  margin: 30px auto;
+}
+
+.searchInputField {
+  width: 87%;
+  height: 56px;
+  border-radius: 16px;
+  border-style: none;
+  border: 1px solid linear-gradient(91.36deg, #28ccc2 0%, #2887cc 100%);
+  outline: none;
+}
+
+.filterBtn {
+  background-image: var(--buttonColor);
+  color: var(--textColor);
+  width: 140px;
+  height: 56px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.filterIcon {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+}
+/* // On click
+// Open overlay: "Investor Filters";
+// Animate: Move in Right;
+animation-timing-function: ease-out;
+animation-duration: 300ms; */
+.InvestorsListWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto);
+  width: 98%;
+
+  height: auto;
+  margin: 15px auto;
+  border: 2px solid orange;
+}
