@@ -1,16 +1,25 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Home from "./components/Home";
+import { Routes, Route, useLocation, Navigation } from "react-router-dom";
 import DefaultLayout from "./Layout/DefaultLayout";
 import Dashboard from "./pages/Dashboard";
+import Investors from "./pages/Investors";
+import PrimaryDeals from "./pages/PrimaryDeals";
+import SecondaryDeals from "./pages/SecondaryDeals";
+import Logs from "./pages/Logs";
+import Companies from "./pages/Companies";
 
 const App = () => {
   return (
     <>
-      <Home />
-      {/* <Dashboard /> */}
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/companies" element={<Companies />} />
+        <Route path="/primarydeals" element={<PrimaryDeals />} />
+        <Route path="/secondarydeals" element={<SecondaryDeals />} />
+        <Route path="/investors" element={<Investors />} />
+        <Route path="/logs" element={<Logs />} />
+      </Routes>
     </>
   );
 };

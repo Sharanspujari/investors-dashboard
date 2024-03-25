@@ -1,12 +1,12 @@
 import React from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
 
-const Dashboard = () => {
+const Investors = () => {
   return (
-    <DefaultLayout pageName={"Dashboard"}>
-      <div>Dashboard</div>
+    <DefaultLayout pageName={"Investors"}>
+      <div>Investors</div>
     </DefaultLayout>
   );
 };
 
-export default Dashboard;
+export default Investors;
