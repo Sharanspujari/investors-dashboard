@@ -55,12 +55,17 @@ opacity: 0px; */
 }
 
 .searchInputField {
-  width: 87%;
+  width: 85%;
   height: 56px;
   border-radius: 16px;
+  padding: 5px;
   border-style: none;
-  border: 1px solid linear-gradient(91.36deg, #28ccc2 0%, #2887cc 100%);
+  border: 1px solid #28ccc2;
   outline: none;
+}
+.searchInputField::placeholder {
+  font-weight: 400;
+  color: #555555;
 }
 
 .filterBtn {
@@ -87,9 +92,170 @@ animation-duration: 300ms; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto);
+  gap: 25px;
   width: 98%;
-
   height: auto;
   margin: 15px auto;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
+}
+
+.cardWrapper {
+  width: 535px;
+  height: 278px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+/* border: 1px solid #EEEEEEwidth: 528px;
+height: 100px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px; */
+.statusWrapper {
+  height: 100px;
+  display: flex;
+  /* align-items: cent; */
+  justify-content: space-between;
+  margin: 8px;
+  /* border: 2px solid green; */
+}
+.ImageNameWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* background: #FFFFFF;
+width: 43px;
+height: 20px;
+gap: 0px;
+opacity: 0px; */
+/* background: #0EB532; */
+
+.active {
+  width: 59px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  background-color: #0eb532;
+  color: var(--textColor);
+  border-radius: 8px;
+  margin: 5px;
+}
+.inactive {
+  width: 73px;
+  height: 28px;
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d32222;
+  color: var(--textColor);
+  border-radius: 8px;
+  text-align: center;
+}
+/* border-width: 0px, 1px, 0px, 1px;
+
+border-style: solid;
+
+border-color: #EEEEEE;
+
+width: Fixed (176px)px;
+height: Fixed (94px)px;
+top: 100px;
+gap: 6px;
+border: 0px 1px 0px 1px;
+opacity: 0px; */
+
+.centerDiv {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  height: 94px;
+  display: flex;
+}
+.investmentsWrapper {
+  /* width: 176px; original width */
+  width: 178px;
+  border-right: 1px solid #eeeeee;
+  height: 94px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardText {
+  color: #2887cc;
+  font-family: Work Sans, Readex Pro;
+  font-weight: 600;
+}
+.labelText {
+  color: #555555;
+  font-family: Work Sans;
+  font-weight: 400;
+}
+
+.userName {
+  color: #333333;
+  font-family: Readex Pro;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+/* background: #555555;
+font-family: Work Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.02em;
+text-align: left; */
+
+.email {
+  font-family: Work Sans;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  color: #555555;
+}
+.btnWrappers {
+  height: 84px;
+  width: 528px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.createLogBtn {
+  width: 200px;
+  height: 44px;
+  font-family: Reem Kufi;
+  font-weight: 600;
+  letter-spacing: 2%;
+  border-style: none;
+  color: #2887cc;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* width: Fixed (260px)px;
+height: Fixed (44px)px;
+top: 214px;
+left: 244px;
+padding: 12px 24px 12px 24px;
+gap: 10px;
+border-radius: 16px 0px 0px 0px;
+opacity: 0px; */
+
+.viewDetailsBtn {
+  width: 260px;
+  height: 44px;
+  border-radius: 16px;
+  color: #ffffff;
+  border-style: none;
+  background-image: var(--buttonColor);
 }
