@@ -257,7 +257,7 @@ animation-duration: 300ms; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 15px;
 }
 .rightWrapper {
   width: 50%;
@@ -265,7 +265,7 @@ animation-duration: 300ms; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 15px;
 }
 
 .labelText {

@@ -2,7 +2,6 @@
   width: 98%;
   height: 140px;
   border-radius: 16px;
-  /* margin: 15px auto; */
   border: 1px solid #eeeeee;
   background-color: #ffffff;
   display: flex;
@@ -10,10 +9,9 @@
   padding: 0;
 }
 .addInvestor {
-  /* margin: 15px auto; */
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
-  width: 100%;
+  width: 98%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,7 +79,6 @@
   height: 40px;
   border-radius: 12px;
   border: 1px solid #eeeeee;
-
   cursor: pointer;
   font-family: Readex Pro;
   font-size: 16px;
@@ -90,4 +87,206 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #000000;
+}
+
+.formContainer {
+  /* margin: 0; */
+  border: 1px solid #eeeeee;
+  height: auto;
+  width: 98%;
+  border-radius: 16px;
+  margin-top: 15px;
+  padding: 0;
+}
+.OverViewDiv {
+  background-color: #121212;
+  height: 70px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.OverView {
+  color: var(--textColor);
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.fundHeadWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fundDetailsContainer {
+  margin: 16px;
+}
+.fundCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.fundDataDiv {
+  border: 1px solid #eeeeee;
+  width: 210px;
+  height: 143px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 16px;
+  padding: 30px;
+}
+.growIconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.fundHead {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000000;
+}
+.fundValue {
+  font-family: Reem Kufi;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #555555;
+}
+
+/* log Detail style start from here */
+.logDetails {
+  font-family: Readex Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #555555;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+.logInfostatus {
+  width: 88.93px;
+  height: 22.95px;
+  border-radius: 7.65px;
+  background-color: #c59e16;
+  font-family: Readex Pro;
+  font-size: 13.39px;
+  font-weight: 400;
+  line-height: 20.08px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--textColor);
+}
+.founded {
+  width: 88.93px;
+  height: 22.95px;
+  border-radius: 7.65px;
+  background-color: #1ac516;
+  font-family: Readex Pro;
+  font-size: 13.39px;
+  font-weight: 400;
+  line-height: 20.08px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--textColor);
+}
+.logsGridContainer {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.card {
+  width: 560.88px;
+  height: auto;
+  border-radius: 15.3px;
+  border: 0.96px solid #eeeeee;
+}
+.logNumber {
+  height: 49.72px;
+  border-bottom: 0.96px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  font-family: Readex Pro;
+  font-size: 17.21px;
+  font-weight: 600;
+  line-height: 25.82px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #555555;
+}
+.detailGridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat((2, 1fr));
+  gap: 0;
+}
+.logCardDetail {
+  width: 252px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.96px solid #eeeeee;
+  border-right: none;
+}
+.textName {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.investerLabel {
+  font-family: Work Sans;
+  font-size: 13.39px;
+  font-weight: 400;
+  line-height: 20.08px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #777777;
+}
+.investorName {
+  font-family: Readex Pro;
+  font-size: 13.39px;
+  font-weight: 400;
+  line-height: 20.08px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #393939;
+}
+.viewDetailDiv {
+  width:90%;
+  height: 84.15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.viewDetailsBtn {
+  width: 483.76px;
+  height: 45.9px;
+  border-radius: 15.3px;
+  background-image: var(--buttonColor);
+  border-style: none;
+  color: var(--textColor);
+  font-family: Reem Kufi;
+  font-size: 15.3px;
+  font-weight: 600;
+  line-height: 15.3px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-family: Reem Kufi;
+  font-size: 15.3px;
+  font-weight: 600;
+  line-height: 15.3px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
