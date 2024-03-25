@@ -1,0 +1,40 @@
+/* .defaultLayout_Container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+ 
+  border: 2px solid red;
+  background-color: blue;
+  
+}
+.headerandMain_wrapper {
+  display: flex;
+  border: 2px solid rgb(225, 4, 166);
+  flex-direction: column;
+}
+
+.main_container {
+  width: 80%;
+  height: 500px;
+
+  padding: 1rem;
+} */
+
+.defaultLayout_container {
+  display: flex;
+}
+.headerandMain_wrapper {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+.childrenWrapper {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 280px;
+  padding: 15px;
+  height: auto;
+}

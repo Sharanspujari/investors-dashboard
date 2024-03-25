@@ -1,0 +1,29 @@
+.sidebar_Wrapper {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  overflow-x:auto;
+  width: 280px;
+  background-color: #121212;
+  color: white;
+}
+.logoContainer {
+  height: 80px;
+  width: 280px;
+  background-color: #000000;
+}
+
+.linksContainer {
+  min-height: 640px;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #2e2e2e;
+}
+.profileContainer {
+  height: 80px;
+  background-color: #000000;
+}
