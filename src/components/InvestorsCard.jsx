@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import style from "../styles/Investors.module.css";
 import { ReactComponent as PrimaryButton } from "../assets/PrimaryButton.svg";
 const InvestorsCard = ({ data }) => {
+  const navigate = useNavigate();
   return (
     <div className={style.cardWrapper}>
       <div className={style.statusWrapper}>
@@ -38,7 +40,12 @@ const InvestorsCard = ({ data }) => {
         <button className={style.createLogBtn}>
           <PrimaryButton />
         </button>
-        <button className={style.viewDetailsBtn}>VIEWDETAILS</button>
+        <button
+          onClick={()=>navigate("/investordetail")}
+          className={style.viewDetailsBtn}
+        >
+          VIEW DETAILS
+        </button>
       </div>
     </div>
   );

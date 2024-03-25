@@ -9,6 +9,7 @@ import SecondaryDeals from "./pages/SecondaryDeals";
 import Logs from "./pages/Logs";
 import Companies from "./pages/Companies";
 import AddInvestor from "./components/AddInvestor";
+import InvestorDetail from "./components/InvestorDetail";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/secondarydeals" element={<SecondaryDeals />} />
         <Route path="/investors" element={<Investors />} />
         <Route path="/addinvestor" element={<AddInvestor />} />
+        <Route path="/investordetail" element={<InvestorDetail />} />
         <Route path="/logs" element={<Logs />} />
       </Routes>
     </>
