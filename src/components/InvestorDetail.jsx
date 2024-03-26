@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
 import style from "../styles/InvestorDetails.module.css";
+import { useParams } from "react-router-dom";
 import userImage from "../assets/image 1.png";
 import { ReactComponent as LeftArrowIcon } from "../assets/all-investor-left-arrow.svg";
 import { ReactComponent as PrimaryButton } from "../assets/PrimaryButton.svg";
@@ -10,6 +11,22 @@ import { ReactComponent as GrowthIcon } from "../assets/growth 1.svg";
 import { ReactComponent as InvestedCompanyIcon } from "../assets/companies.svg";
 import { ReactComponent as GreenUpIcon } from "../assets/green-up-arrow.svg";
 const InvestorDetail = () => {
+  const { id } = useParams();
+  const [singleInvestors, setSingleInvestor] = useState([]);
+  console.log("singleInvestors: ", singleInvestors.profilPhoto);
+  console.log("id: ", id);
+
+  useEffect(() => {
+    if (localStorage.getItem("investors") !== null) {
+      const investorsFromStorage = JSON.parse(
+        localStorage.getItem("investors")
+      );
+      const selectedInvestor = investorsFromStorage.find(
+        (inv) => inv.id === parseInt(id)
+      );
+      setSingleInvestor(selectedInvestor);
+    }
+  }, [id]);
   return (
     <DefaultLayout pageName={"Investor"} subPageName={">Rajesh Sinha"}>
       <div className={style.headerWrapper}>
@@ -17,7 +34,7 @@ const InvestorDetail = () => {
           <div className={style.IconNameWrapper}>
             <LeftArrowIcon />
             <img src={userImage} alt="profile image" />
-            <span>Rajesh Sinha</span>
+            <span>{singleInvestors.investorName}</span>
           </div>
           <div className={style.btnWrapper}>
             <PrimaryButton />
@@ -105,14 +122,18 @@ const InvestorDetail = () => {
                 <div className={style.logCardDetail}>
                   <div className={style.textName}>
                     <span className={style.investerLabel}>Investor Name</span>
-                    <span className={style.investorName}>Rajesh Sinha</span>
+                    <span className={style.investorName}>
+                      {singleInvestors.investorName}
+                    </span>
                   </div>
                 </div>
 
                 {/* second card */}
                 <div className={style.logCardDetail}>
                   <div className={style.textName}>
-                    <span className={style.investerLabel}>Transaction type</span>
+                    <span className={style.investerLabel}>
+                      Transaction type
+                    </span>
                     <span className={style.investorName}>Buy</span>
                   </div>
                 </div>

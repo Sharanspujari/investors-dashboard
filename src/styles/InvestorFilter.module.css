@@ -1,0 +1,33 @@
+.filterConatiner {
+  width: 320px;
+  height: 800px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.topWrapper {
+  border-bottom: 1px solid #eeeeee;
+  background-color: #f9f9f9;
+  width: 320px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.iconLabelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px;
+}
+.checboxWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.mainWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 6px;
+}

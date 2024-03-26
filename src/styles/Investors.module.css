@@ -61,7 +61,7 @@
   line-height: 22.4px;
   letter-spacing: 0.02em;
   text-align: left;
-  padding-left:20px;
+  padding-left: 20px;
 }
 .searchInputField::placeholder {
   font-weight: 400;
@@ -290,6 +290,11 @@ animation-duration: 300ms; */
   position: relative;
   border-radius: 16px;
   margin-top: 5px;
+  color: transparent;
+  background-color: var(--textColor);
+}
+.profileInput::-webkit-file-upload-button {
+  visibility: hidden;
 }
 .gallaryIcon {
   position: absolute;
